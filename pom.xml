@@ -23,10 +23,18 @@
 
     <modules>
         <module>jOOQ-mcve-java-h2</module>
-        <module>jOOQ-mcve-java-postgres</module>
-        <module>jOOQ-mcve-kotlin-h2</module>
-        <module>jOOQ-mcve-kotlin-postgres</module>
-        <module>jOOQ-mcve-scala-h2</module>
-        <module>jOOQ-mcve-scala-postgres</module>
     </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M8</version>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
